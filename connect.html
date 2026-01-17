@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>ZeroVex | Connect</title>
+
+  <style>
+    :root{
+      --bg: #0E1116;
+      --text: #EDEDED;
+      --muted: rgba(237,237,237,0.72);
+      --accent: #1F3C5B;
+      --stroke: rgba(237,237,237,0.12);
+    }
+    *{ box-sizing: border-box; }
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1000px 600px at 20% 10%, rgba(31,60,91,0.55), transparent 55%),
+        radial-gradient(900px 500px at 80% 90%, rgba(31,60,91,0.35), transparent 60%),
+        var(--bg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 24px;
+    }
+    .wrap{ width:100%; max-width: 520px; }
+    .panel{
+      border: 1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,0.075), rgba(255,255,255,0.05));
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 18px 60px rgba(0,0,0,0.55);
+      backdrop-filter: blur(10px);
+    }
+    .brand{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .logo{
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .name{
+      font-size: 28px;
+      line-height: 1.1;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+      margin: 8px 0 0 0;
+    }
+    .role-pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--stroke);
+      background: rgba(31,60,91,0.22);
+      color: var(--text);
+      font-size: 13px;
+      margin-top: 12px;
+      width: fit-content;
+    }
+    .dot{
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(237,237,237,0.85);
+      box-shadow: 0 0 0 4px rgba(31,60,91,0.35);
+    }
+    .title{
+      margin: 10px 0 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .badge{
+      width: 74px;
+      height: 74px;
+      border-radius: 14px;
+      border: 1px solid var(--stroke);
+      background: rgba(255,255,255,0.04);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      flex: 0 0 auto;
+    }
+    .badge img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 10px;
+      filter: grayscale(1);
+      opacity: 0.95;
+    }
+    .cta{
+      margin-top: 18px;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+    }
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 14px 14px;
+      border-radius: 14px;
+      text-decoration:none;
+      border: 1px solid var(--stroke);
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,0.08); border-color: rgba(237,237,237,0.18); }
+    .btn:active{ transform: translateY(0px); }
+    .btn.primary{
+      background: linear-gradient(180deg, rgba(31,60,91,0.8), rgba(31,60,91,0.5));
+      border-color: rgba(31,60,91,0.8);
+    }
+    .sub{
+      margin-top: 14px;
+      color: rgba(237,237,237,0.70);
+      font-size: 12.5px;
+      line-height: 1.55;
+      text-align:center;
+    }
+    .links{
+      margin-top: 14px;
+      display:flex;
+      gap: 10px;
+      justify-content:center;
+      flex-wrap: wrap;
+      color: rgba(237,237,237,0.75);
+      font-size: 12.5px;
+    }
+    .links a{
+      color: rgba(237,237,237,0.80);
+      text-decoration:none;
+      border-bottom: 1px dotted rgba(237,237,237,0.25);
+    }
+    .links a:hover{ color: var(--text); border-bottom-color: rgba(237,237,237,0.55); }
+    @media (max-width: 380px){
+      .name{ font-size: 24px; }
+      .badge{ width: 64px; height: 64px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="panel" aria-label="ZeroVex Connect Card">
+      <header class="brand">
+        <div>
+          <div class="logo">ZeroVex</div>
+
+          <h1 class="name">Jhonatan Oyola</h1>
+
+          <div class="role-pill">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Cybersecurity &amp; IT Consultant</span>
+          </div>
+
+          <p class="title">Cybersecurity &amp; IT consulting for small organizations</p>
+        </div>
+
+        <div class="badge" title="CompTIA Security+ CE">
+          <img src="assets/securityplus-ce.png" alt="CompTIA Security+ CE badge" />
+        </div>
+      </header>
+
+      <div class="cta">
+        <a class="btn primary" href="assets/jhonatan-oyola-zerovex.vcf" download>
+          Save Contact
+        </a>
+
+        <a class="btn" href="mailto:info@zerovextech.com?subject=ZeroVex%20Inquiry&body=Hi%20Jhonatan%2C%0A%0AI%20just%20tapped%20your%20ZeroVex%20tag%20and%20would%20like%20to%20connect.%0A%0A%2D%2D%0AName%3A%0AOrganization%3A%0APhone%3A%0A">
+          Email Me
+        </a>
+
+        <a class="btn" href="https://zerovextech.com" target="_blank" rel="noopener noreferrer">
+          Visit Website
+        </a>
+      </div>
+
+      <p class="sub">
+        Tap saved. You can bookmark this page for quick access later.
+      </p>
+
+      <div class="links">
+        <a href="https://zerovextech.com" target="_blank" rel="noopener noreferrer">zerovextech.com</a>
+        <a href="mailto:info@zerovextech.com">info@zerovextech.com</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
