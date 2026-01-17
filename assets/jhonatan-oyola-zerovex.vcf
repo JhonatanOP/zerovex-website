@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Oyola;Jhonatan;;;
+FN:Jhonatan Oyola
+ORG:ZeroVex
+TITLE:Cybersecurity & IT Consultant
+EMAIL;TYPE=INTERNET,WORK:info@zerovextech.com
+EMAIL;TYPE=INTERNET,WORK:jhonatan@zerovextech.com
+URL:https://zerovextech.com
+NOTE:Cybersecurity & IT consulting for small organizations
+END:VCARD
