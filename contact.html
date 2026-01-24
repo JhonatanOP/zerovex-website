@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact | ZeroVex Tech</title>
-  <meta name="description" content="Contact ZeroVex Tech for managed security and IT consulting." />
+  <meta name="description" content="Contact ZeroVex Tech for managed IT and cybersecurity in Northern Virginia or secure remote support worldwide. We typically respond within one business day." />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -24,26 +24,38 @@
   <main class="section">
     <div class="container grid2">
       <div>
-        <h1 style="font-size:38px;margin-top:0">Contact</h1>
-        <p class="lead">Tell us what you need help with. We’ll respond with next steps and a simple scope.</p>
+        <h1 style="font-size:38px;margin-top:0">Ready to strengthen your IT & security?</h1>
+        <p class="lead">Tell us a bit about what you need — we typically reply within one business day with next steps and a simple scope.</p>
 
         <div class="card pad" style="margin-top:14px">
           <h3>Fastest way</h3>
           <p>Email: <a href="mailto:hello@zerovextech.com"><b>hello@zerovextech.com</b></a></p>
-          <p class="mini" style="margin-top:8px">If you add a phone number later, put it here and in the header/footer.</p>
+          <p class="mini" style="margin-top:8px">
+            Serving Arlington & Northern Virginia (on-site when needed) • Secure remote support worldwide
+          </p>
         </div>
 
-        <div class="note" style="margin-top:14px">
-          Optional: Use Formspree so your static GitHub Pages form actually sends messages.
-          Replace the action URL below with your Formspree endpoint.
+        <div class="card pad" style="margin-top:14px">
+          <h3>What happens next</h3>
+          <ul class="list">
+            <li><span class="tick">✓</span> We review your message</li>
+            <li><span class="tick">✓</span> We reply with clarifying questions (if needed)</li>
+            <li><span class="tick">✓</span> You get a simple scope + next steps</li>
+          </ul>
         </div>
       </div>
 
       <div class="card pad">
         <h3>Request a quote</h3>
 
-        <!-- OPTION A (recommended): Formspree -->
-        <form class="form" action="https://formspree.io/f/REPLACE_ME" method="POST">
+        <form class="form" action="https://formspree.io/f/mwvlpgra" method="POST">
+          <!-- Redirect after successful submit -->
+          <input type="hidden" name="_next" value="https://zerovextech.com/thank-you.html" />
+          <!-- Email subject line -->
+          <input type="hidden" name="_subject" value="New website inquiry — ZeroVex Tech" />
+          <!-- Honeypot (bots fill this, humans won't) -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
           <label for="name">Full name</label>
           <input class="input" id="name" name="name" required />
 
@@ -53,20 +65,43 @@
           <label for="email">Email</label>
           <input class="input" id="email" name="email" type="email" required />
 
+          <label for="phone">Phone (optional)</label>
+          <input class="input" id="phone" name="phone" type="tel" />
+
+          <label for="interest">What are you interested in?</label>
+          <select class="input" id="interest" name="interest" required>
+            <option value="" selected disabled>Select one</option>
+            <option>Security assessment</option>
+            <option>Hardening & remediation</option>
+            <option>Backups & recovery</option>
+            <option>Monitoring & response options</option>
+            <option>Compliance documentation</option>
+            <option>Managed IT services</option>
+          </select>
+
           <label for="help">How can we help?</label>
           <textarea id="help" name="message" required></textarea>
 
           <div style="margin-top:12px">
-            <button class="btn primary" type="submit" style="width:100%">Send</button>
+            <button class="btn primary" type="submit" style="width:100%">Request My Quote</button>
           </div>
+
           <p class="mini" style="margin-top:10px">
-            By submitting, you agree to our <a href="terms.html"><u>Terms</u></a> and <a href="privacy.html"><u>Privacy Policy</u></a>.
+            We respect your privacy and will never sell your information. See our
+            <a href="privacy.html"><u>Privacy Policy</u></a>.
+          </p>
+          <p class="mini">
+            By submitting, you agree to our <a href="terms.html"><u>Terms</u></a>.
           </p>
         </form>
 
-        <!-- OPTION B (no backend): mailto fallback (uncomment if you want it instead)
-        <a class="btn primary" style="width:100%" href="mailto:hello@zerovextech.com?subject=Quote%20Request%20-%20ZeroVex%20Tech&body=Name:%0ACompany:%0AWhat%20you%20need:%0A">Email us</a>
-        -->
+        <hr class="sep" />
+
+        <div class="mini">Prefer email?</div>
+        <a class="btn ghost" style="width:100%; margin-top:10px"
+           href="mailto:hello@zerovextech.com?subject=Quote%20Request%20-%20ZeroVex%20Tech&body=Name:%0ACompany:%0AInterest:%0ADetails:%0A">
+          Email your request
+        </a>
       </div>
     </div>
   </main>
