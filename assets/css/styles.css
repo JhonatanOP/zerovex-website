@@ -193,5 +193,32 @@ textarea{min-height:120px; resize:vertical}
   font-size:14px;
 }
 
+/* Brand / Logo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.brand-text {
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+/* Slightly larger logo on desktop */
+@media (min-width: 900px) {
+  .brand-logo {
+    height: 32px;
+  }
+}
+
+
 select.input { appearance: none; }
 
