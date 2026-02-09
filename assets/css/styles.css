@@ -266,5 +266,23 @@ select.input:focus {
 .section-title { margin: 0 0 10px; }
 .section-subtle { max-width: 70ch; }
 
+/* Centered content sections */
+.centered-section {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.centered-section .list {
+  text-align: left; /* keeps bullets readable */
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.centered-section .hero-actions {
+  justify-content: center;
+}
+
+  
 }
 
