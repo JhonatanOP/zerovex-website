@@ -203,6 +203,31 @@ hr.sep{border:none; border-top:1px solid var(--line); margin:16px 0}
 }
 textarea{min-height:120px; resize:vertical}
 
+/* Fix select dropdown readability */
+select.input {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #ffffff;   /* solid background */
+  color: #111827;              /* dark readable text */
+  border: 1px solid var(--line);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+/* Ensure dropdown options are readable */
+select.input option {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* Focus state (matches site style) */
+select.input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(121,184,255,.35);
+}
+
+
 .note{
   border-left:3px solid rgba(121,184,255,.6);
   padding:12px 12px;
@@ -237,7 +262,4 @@ textarea{min-height:120px; resize:vertical}
     height: 32px;
   }
 }
-
-
-select.input { appearance: none; }
 
