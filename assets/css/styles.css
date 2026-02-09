@@ -261,5 +261,10 @@ select.input:focus {
   .brand-logo {
     height: 32px;
   }
+
+  /* Services page sections */
+.section-title { margin: 0 0 10px; }
+.section-subtle { max-width: 70ch; }
+
 }
 
